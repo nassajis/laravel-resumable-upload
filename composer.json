@@ -1,7 +1,6 @@
 {
     "name": "nassajis/laravel-resumable-upload",
     "description": "Laravel Resumable Upload",
-	"version": "1.0",
     "authors": [
         {
             "name": "Nassaji",
