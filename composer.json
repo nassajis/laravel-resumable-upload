@@ -1,0 +1,30 @@
+{
+    "name": "nassajis/laravel-resumable-upload",
+    "description": "Laravel Resumable Upload",
+	"version": "0.2.2",
+    "authors": [
+        {
+            "name": "Nassaji",
+            "email": "nassaji.s@gmail.com"
+        }
+    ],
+    "require": {
+		"php": ">=5.3.0",
+		"cakephp/filesystem": "^3.0"
+	},
+	"require-dev": {
+		"phpunit/phpunit": "~4.0",
+		"monolog/monolog": "^1.17"
+	},
+	"license": "MIT",
+	"autoload": {
+		"psr-4": {
+		  "Dilab\\": "src/"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+		  "Dilab\\Test\\": "test/src/"
+		}
+	}
+}
