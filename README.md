@@ -4,7 +4,7 @@ Laravel Resumable Upload
 
 This is a fork from [dilab/resumable.php](https://github.com/dilab/resumable.php) with changes to make it compatible with the [Laravel Framework](https://github.com/laravel/laravel)
 
-It is currently a work in progress and it is currently developed with Laravel versions 5.1 and 5.2 in mind.
+It is currently a work in progress and it is currently developed with Laravel versions 5.1+.
 
 ## Installation
 
