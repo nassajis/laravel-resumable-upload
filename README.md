@@ -65,8 +65,8 @@ class UploadController extends Controller
         $resumable->tempFolder      = $tmpPath;
         $resumable->uploadFolder    = $uploadPath;
 		
-		# optional
-		$resumable->uploadFileName  = str_random(10);
+	# optional
+	$resumable->uploadFileName  = str_random(10);
 
         $result = $resumable->process();
         
