@@ -16,7 +16,7 @@ class Resumable
 
     public $uploadFolder = 'test/files/uploads';
 	
-	public $uploadFileName ;
+	public $uploadFileName = '' ;
 
     // for testing
     public $deleteTmpFolder = true;
@@ -68,8 +68,12 @@ class Resumable
     {
         $file = $this->request->file();
         $identifier = $this->resumableParam('identifier');
-        $file_extention = explode('.',$this->resumableParam('filename'));
-        $filename =  $this->uploadFileName .'.'. $file_extention[count($file_extention)-1] ;
+		if( $this->uploadFileName != '' ) {
+			$file_extention = explode('.',$this->resumableParam('filename'));
+			$filename =  $this->uploadFileName .'.'. $file_extention[count($file_extention)-1] ;
+		}
+		else
+			$filename = $this->resumableParam('filename')
         $chunkNumber = $this->resumableParam('chunkNumber');
         $chunkSize = $this->resumableParam('chunkSize');
         $totalSize = $this->resumableParam('totalSize');
