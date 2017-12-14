@@ -71,9 +71,12 @@ class Resumable
 		if( $this->uploadFileName != '' ) {
 			$file_extention = explode('.',$this->resumableParam('filename'));
 			$filename =  $this->uploadFileName .'.'. $file_extention[count($file_extention)-1] ;
+            $this->uploadFileName =  $filename ;
 		}
-		else
-			$filename = $this->resumableParam('filename');
+		else{
+            $filename = $this->resumableParam('filename');
+            $this->uploadFileName =  $filename ;
+        }
         $chunkNumber = $this->resumableParam('chunkNumber');
         $chunkSize = $this->resumableParam('chunkSize');
         $totalSize = $this->resumableParam('totalSize');
